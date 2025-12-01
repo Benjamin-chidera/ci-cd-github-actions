@@ -1,0 +1,30 @@
+{
+  "name": "ci-cd-github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:integration",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "npm run build:js",
+    "test:unit": "echo \"No unit tests defined\"",
+    "test:integration": "echo \"No integration tests defined\"",
+    "build:js": "mkdir -p dist && echo '<!doctype html><title>build</title>' > dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benjamin-chidera/ci-cd-github-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Benjamin-chidera/ci-cd-github-actions/issues"
+  },
+  "homepage": "https://github.com/Benjamin-chidera/ci-cd-github-actions#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
